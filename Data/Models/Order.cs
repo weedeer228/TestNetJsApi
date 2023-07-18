@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 
 namespace Data.Models
 {
@@ -10,6 +11,8 @@ namespace Data.Models
         public DateTime Date { get; set; }
 
         public City City { get; set; }
+
+        public Company Company { get; set; }
 
     }
 }

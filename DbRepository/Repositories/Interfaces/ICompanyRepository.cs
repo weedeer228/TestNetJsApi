@@ -2,7 +2,7 @@
 
 namespace DbRepository.Repositories.Interfaces
 {
-    internal interface ICompanyRepository : IRepository<Company>
+    public interface ICompanyRepository : IRepository<Company>
     {
         public Task<IEnumerable<Company>> GetCompaniesBaseInfo();
     }

@@ -1,7 +1,30 @@
-var builder = WebApplication.CreateBuilder(args);
+using System.Text.Json.Serialization;
+using DbRepository;
+using DbRepository.Repositories;
+using DbRepository.Repositories.Interfaces;
+using TestAssignment.Repository;
 
+var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+services.AddMvc()
+    .AddJsonOptions(o => {
+        o.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+    });
+services.AddSwaggerGen();
+services.AddControllers();
+services.AddEndpointsApiExplorer();
+
+services.AddScoped<IRepositoryContextFactory, RepositoryContextFactory>();
+services.AddScoped<ICityRepository, CityRepository>();
+services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+services.AddScoped<INoteRepository, NoteRepository>();
+services.AddScoped<IOrdersRepository, OrderRepository>();
+services.AddScoped<IGeneralRepository, GeneralRepository>();
+services.AddScoped<ICompanyRepository, CompanyRepository>();
+
+services.AddDbContext<RepositoryContext>();
 // Add services to the container.
-builder.Services.AddRazorPages();
+//builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
@@ -9,17 +32,20 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
 
-app.UseHttpsRedirection();
+}
+app.UseSwagger();
+
+app.UseSwaggerUI();
+
+//app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+app.MapControllers();
+//app.UseAuthorization();
 
-app.MapRazorPages();
+//app.MapRazorPages();
 
 app.Run();

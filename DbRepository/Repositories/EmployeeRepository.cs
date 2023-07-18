@@ -7,11 +7,11 @@ namespace DbRepository.Repositories
 {
     public class EmployeeRepository : BaseRepository, IEmployeeRepository
     {
-        public EmployeeRepository(string connectionString, IRepositoryContextFactory contextFactory) : base(connectionString, contextFactory)
+        public EmployeeRepository(IRepositoryContextFactory contextFactory) : base(contextFactory)
         {
-            Context = ContextFactory.CreateDbContext(ConnectionString);
+            Context = ContextFactory.CreateDbContext();
         }
-        public async Task<IEnumerable<Employee>> GetAllAsync() => await Context.Employees.ToListAsync();
+        public async Task<IEnumerable<Employee>> GetAllAsync() => await Context.Employees.Include(e => e.Notes).ThenInclude(e => e.Company).ToListAsync();
 
         public async Task<Employee?> GetByIdAsync(int id) => await Context.Employees.FirstOrDefaultAsync(c => c.Id == id);
 

@@ -7,13 +7,13 @@ namespace DbRepository.Repositories
 {
     public class NoteRepository : BaseRepository, INoteRepository
     {
-        public NoteRepository(string connectionString, IRepositoryContextFactory contextFactory) : base(
-            connectionString, contextFactory)
+        public NoteRepository(IRepositoryContextFactory contextFactory) : base(
+             contextFactory)
         {
-            Context = ContextFactory.CreateDbContext(ConnectionString);
+            Context = ContextFactory.CreateDbContext();
         }
 
-        public async Task<IEnumerable<Note>> GetAllAsync() => await Context.Notes.ToListAsync();
+        public async Task<IEnumerable<Note>> GetAllAsync() => await Context.Notes.Include(n => n.Employee).ToListAsync();
 
         public async Task<Note?> GetByIdAsync(int id) =>
             await Context.Notes.FirstOrDefaultAsync(c => c.Id == id);

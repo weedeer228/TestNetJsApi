@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Data.Models
 {
@@ -9,6 +10,9 @@ namespace Data.Models
         public string LastName { get; set; }
         public string Title { get; set; }
         public DateTime BirthDate { get; set; }
+        public Company Company { get; set; }
+
+        public IEnumerable<Note> Notes { get; set; }
 
         public Positions Position { get; set; }
     }

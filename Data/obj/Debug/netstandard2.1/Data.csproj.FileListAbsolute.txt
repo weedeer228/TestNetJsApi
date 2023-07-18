@@ -1,0 +1,10 @@
+C:\Users\User03\source\repos\TestAssignment\Data\bin\Debug\netstandard2.1\Data.deps.json
+C:\Users\User03\source\repos\TestAssignment\Data\bin\Debug\netstandard2.1\Data.dll
+C:\Users\User03\source\repos\TestAssignment\Data\bin\Debug\netstandard2.1\Data.pdb
+C:\Users\User03\source\repos\TestAssignment\Data\obj\Debug\netstandard2.1\Data.csproj.AssemblyReference.cache
+C:\Users\User03\source\repos\TestAssignment\Data\obj\Debug\netstandard2.1\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User03\source\repos\TestAssignment\Data\obj\Debug\netstandard2.1\Data.AssemblyInfoInputs.cache
+C:\Users\User03\source\repos\TestAssignment\Data\obj\Debug\netstandard2.1\Data.AssemblyInfo.cs
+C:\Users\User03\source\repos\TestAssignment\Data\obj\Debug\netstandard2.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\User03\source\repos\TestAssignment\Data\obj\Debug\netstandard2.1\Data.dll
+C:\Users\User03\source\repos\TestAssignment\Data\obj\Debug\netstandard2.1\Data.pdb

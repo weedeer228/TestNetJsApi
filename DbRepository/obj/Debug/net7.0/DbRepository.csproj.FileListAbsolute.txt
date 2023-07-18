@@ -1,0 +1,15 @@
+C:\Users\User03\source\repos\TestAssignment\DbRepository\obj\Debug\net7.0\DbRepository.csproj.AssemblyReference.cache
+C:\Users\User03\source\repos\TestAssignment\DbRepository\obj\Debug\net7.0\DbRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User03\source\repos\TestAssignment\DbRepository\obj\Debug\net7.0\DbRepository.AssemblyInfoInputs.cache
+C:\Users\User03\source\repos\TestAssignment\DbRepository\obj\Debug\net7.0\DbRepository.AssemblyInfo.cs
+C:\Users\User03\source\repos\TestAssignment\DbRepository\obj\Debug\net7.0\DbRepository.csproj.CoreCompileInputs.cache
+C:\Users\User03\source\repos\TestAssignment\DbRepository\bin\Debug\net7.0\DbRepository.deps.json
+C:\Users\User03\source\repos\TestAssignment\DbRepository\bin\Debug\net7.0\DbRepository.dll
+C:\Users\User03\source\repos\TestAssignment\DbRepository\bin\Debug\net7.0\DbRepository.pdb
+C:\Users\User03\source\repos\TestAssignment\DbRepository\bin\Debug\net7.0\Data.dll
+C:\Users\User03\source\repos\TestAssignment\DbRepository\bin\Debug\net7.0\Data.pdb
+C:\Users\User03\source\repos\TestAssignment\DbRepository\obj\Debug\net7.0\DbRepository.csproj.CopyComplete
+C:\Users\User03\source\repos\TestAssignment\DbRepository\obj\Debug\net7.0\DbRepository.dll
+C:\Users\User03\source\repos\TestAssignment\DbRepository\obj\Debug\net7.0\refint\DbRepository.dll
+C:\Users\User03\source\repos\TestAssignment\DbRepository\obj\Debug\net7.0\DbRepository.pdb
+C:\Users\User03\source\repos\TestAssignment\DbRepository\obj\Debug\net7.0\ref\DbRepository.dll

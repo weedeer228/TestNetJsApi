@@ -5,14 +5,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DbRepository.Repositories
 {
-    internal class CityRepository : BaseRepository, ICityRepository
+    public class CityRepository : BaseRepository, ICityRepository
     {
-        public CityRepository(string connectionString, IRepositoryContextFactory contextFactory) : base(connectionString, contextFactory)
+        public CityRepository(IRepositoryContextFactory contextFactory) : base(contextFactory)
         {
-            Context = ContextFactory.CreateDbContext(ConnectionString);
+            Context = ContextFactory.CreateDbContext();
         }
 
-        public async Task<IEnumerable<City>> GetAllAsync() => await Context.Cities.ToListAsync();
+        public async Task<IEnumerable<City>> GetAllAsync() => await Context.Cities.Include(c => c.Companies).ToListAsync();
 
         public async Task<City?> GetByIdAsync(int id) => await Context.Cities.FirstOrDefaultAsync(c => c.Id == id);
 
@@ -21,7 +21,9 @@ namespace DbRepository.Repositories
         {
             if (await Context.Cities.AnyAsync(c => c.Id == entity.Id))
                 throw new ArgumentException(Constants.EntityIdExistMessage);
+
             await Context.Cities.AddAsync(entity);
+
             return await GetByIdAsync(entity.Id);
         }
         public async Task<City> UpdateAsync(City entity)

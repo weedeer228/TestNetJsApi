@@ -11,6 +11,12 @@ namespace DbRepository
 
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseInMemoryDatabase("TestAssigmentDb");
+        }
+
         public DbSet<Order> Orders { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<Note> Notes { get; set; }
