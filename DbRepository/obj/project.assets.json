@@ -565,23 +565,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User03\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\nikita228\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User03\\source\\repos\\TestAssignment\\DbRepository\\DbRepository.csproj",
+      "projectUniqueName": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\DbRepository\\DbRepository.csproj",
       "projectName": "DbRepository",
-      "projectPath": "C:\\Users\\User03\\source\\repos\\TestAssignment\\DbRepository\\DbRepository.csproj",
-      "packagesPath": "C:\\Users\\User03\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User03\\source\\repos\\TestAssignment\\DbRepository\\obj\\",
+      "projectPath": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\DbRepository\\DbRepository.csproj",
+      "packagesPath": "C:\\Users\\nikita228\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\DbRepository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nikita228\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -590,16 +591,14 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "Z:\\Sync\\NuGet_Packages": {},
-        "Z:\\Sync\\Test_Nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\User03\\source\\repos\\TestAssignment\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\User03\\source\\repos\\TestAssignment\\Data\\Data.csproj"
+            "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\Data\\Data.csproj"
             }
           }
         }
@@ -639,7 +638,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

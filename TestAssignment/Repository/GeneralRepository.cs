@@ -5,6 +5,7 @@ namespace TestAssignment.Repository
 {
     public class GeneralRepository : IGeneralRepository
     {
+        private static  bool isMockCreated = false;
         public GeneralRepository(ICityRepository cityRepository, ICompanyRepository companyRepository, IEmployeeRepository employeeRepository, INoteRepository noteRepository, IOrdersRepository ordersRepository)
         {
             CityRepository = cityRepository;
@@ -24,6 +25,8 @@ namespace TestAssignment.Repository
         /// <returns></returns>
         public async Task CreateMockData()
         {
+            if (isMockCreated) return;
+            isMockCreated = true;
             List<City> cityList = new List<City>();
             List<Employee> employeeList = new List<Employee>();
             List<Note> noteList = new List<Note>();
@@ -47,8 +50,8 @@ namespace TestAssignment.Repository
 
                     employeeList.Add(new Employee()
                     {
-                        FirstName = "name " + 1,
-                        LastName = "Surname " + 1,
+                        FirstName = "name " + j+i,
+                        LastName = "Surname " + j+i,
                         BirthDate = new DateTime(1920 + i, (i / 12) + 1, (i / 4) + 1),
                         Title = i / 2 == 0 ? "Mr" : "Ms",
                         Position = (Positions)(i / 25),
@@ -75,15 +78,19 @@ namespace TestAssignment.Repository
                 }
 
             }
+             cityList.ForEach(async c =>
+            {
+
+                await CityRepository.CreateAsync(c);
+            });
+
             //Сопоставление данных и загрузка в бд
 
             companyList.ForEach(async c =>
             {
-                //c.Employees = new List<Employee>(employeeList.Where(e => e.Company.Id == c.Id));
-                //c.History = new List<Order>(ordersList.Where(o => o.Company.Id == c.Id));
-                //c.Notes = new List<Note>(noteList.Where(n => n.Company.Id == c.Id));
                 await CompanyRepository.CreateAsync(c);
             });
+        
             employeeList.ForEach(async e =>
             {
                 await EmployeeRepository.CreateAsync(e);
@@ -97,20 +104,7 @@ namespace TestAssignment.Repository
             {
                 await NoteRepository.CreateAsync(n);
             });
-            //companyList.ForEach(async c =>
-            //{
-            //    c.Employees = new List<Employee>(employeeList.Where(e => e.Company.Id == c.Id));
-            //    c.History = new List<Order>(ordersList.Where(o => o.Company.Id == c.Id));
-            //    c.Notes = new List<Note>(noteList.Where(n => n.Company.Id == c.Id));
-            //    await CompanyRepository.CreateAsync(c);
-            //});
-            cityList.ForEach(async c =>
-            {
-
-                await CityRepository.CreateAsync(c);
-            });
-
-
+            
             await CompanyRepository.SaveAsync();
         }
     }

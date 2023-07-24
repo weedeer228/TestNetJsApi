@@ -1,0 +1,38 @@
+<div>
+  <div>
+    <div class="header mb-3">History
+      <button class="btn btn-icon header-large header-right" (click)="reloadData()">
+        <i class="bi bi-arrow-clockwise"></i>
+      </button>
+    </div>
+
+    <!-- <thead>
+          <tr>
+              <th  style="color: rgba(0, 0, 0, 0.25); width: 150px; " scope="col">Order Data</th>
+              <th  style="color: rgba(0, 0, 0, 0.25); width: 150px;" scope="col">Store City</th>
+          </tr>
+      </thead> -->
+    <div class="mt-3">
+      <div class="table-header">
+        <table class="table table-header  table-bordered p-0 ">
+          <thead>
+            <tr>
+              <th style="color: rgba(0, 0, 0, 0.25); width: 140px; " scope="col">Order Data1</th>
+              <th style="color: rgba(0, 0, 0, 0.25); width: 150px; " scope="col">Store City</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div>
+        <table class="table table-bordered scroll-table p-0">
+          <tbody>
+            <tr *ngFor="let order of currentCompany.history['$values']">
+              <td class="data-column">{{order.date}}</td>
+              <td class="data-column">{{getOrderCity(order)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

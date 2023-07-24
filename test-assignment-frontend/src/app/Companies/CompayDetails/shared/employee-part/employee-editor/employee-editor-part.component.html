@@ -1,0 +1,39 @@
+<div>
+    <div>
+        <div class="header mb-1">
+            <i class="bi bi-trash-fill header-right header-large"></i>
+            <i class="bi bi-pencil-fill header-right "></i>
+        </div>
+    </div>
+    <div>
+        <div class="space"></div>
+        <form class="mt-3">
+            <div class="form-group flex">
+                <label class="details-label" for="id">FirstName:</label>
+                <div class="details-label"></div>
+                <input class="form-control " type="text" value="{{currentEmployee.firstName}}" />
+            </div>
+            <div class="form-group flex mt-2">
+                <label class="details-label" for="id">Last Name:</label>
+                <div class="details-label"></div>
+                <input class="form-control " type="text" value="{{currentEmployee.lastName}}" />
+            </div>
+
+            <div class="form-groaup flex mt-2">
+                <label class="details-label" for="id">Title:</label>
+                <div class="details-label"></div>
+                <input class="form-control " type="text" value="{{currentEmployee.title}}" />
+            </div>
+            <div class="form-group flex mt-2">
+                <label class="details-label" for="id">Birth Date:</label>
+                <div class="details-label"></div>
+                <input class="form-control " type="text" value="{{currentEmployee.birthDate.split('T')[0]}}" />
+            </div>
+            <div class="form-group flex mt-2">
+                <label class="details-label" for="id">Position:</label>
+                <div class="details-label"></div>
+                <input class="form-control " type="text" value="{{currentEmployee.position}}" />
+            </div>
+        </form>
+    </div>
+</div>

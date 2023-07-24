@@ -1,0 +1,49 @@
+<details-header [name]="companyDetails.name"></details-header>
+<div>
+    <div class="mt-3 wrapper">
+        <div class="grid-first">
+            <div class="info-block">
+                <hr>
+                <company-info-part [currentCompany]="companyDetails"></company-info-part>
+            </div>
+            <div class="bot-border">
+                <hr>
+            </div>
+        </div>
+        <div class="grid-second">
+            <div class="info-block">
+                <hr>
+                <company-history-part [currentCompany]="companyDetails"></company-history-part>
+            </div>
+            <div class="bot-border">
+                <hr>
+            </div>
+        </div>
+        <div class="grid-third">
+            <div class="info-block">
+                <hr>
+                <company-notes-part [currentCompany]="companyDetails"></company-notes-part>
+            </div>
+            <div class="bot-border">
+                <hr>
+            </div>
+        </div>
+        <div class="grid-double-left gr-2">
+            <div class="info-block">
+                <hr>
+                <company-employee-part [currentCompany]="companyDetails"></company-employee-part>
+            </div>
+            <div class="lower-double-border">
+                <hr>
+            </div>
+        </div>
+        <div class="grid-second gr-2">
+            <div class="info-block">
+                <hr>
+                <company-employee-editor-part [currentCompany]="companyDetails"></company-employee-editor-part>
+            </div>
+
+        </div>
+
+    </div>
+</div>

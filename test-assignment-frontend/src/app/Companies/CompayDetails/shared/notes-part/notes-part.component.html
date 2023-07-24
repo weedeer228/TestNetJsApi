@@ -1,0 +1,31 @@
+<div>
+  <div>
+    <div class="header mb-3">Notes
+      <i class="bi bi-arrow-clockwise header-right header-large"></i>
+      <i class="bi bi-trash-fill header-right header-large"></i>
+      <i class="bi bi-plus-lg header-right header-large"></i>
+    </div>
+    <div class="mt-3">
+      <div class="table-header">
+        <table class="table table-header  table-bordered p-0 ">
+          <thead>
+            <tr>
+              <th style="color: rgba(0, 0, 0, 0.25); width: 140px; " scope="col">Invoice Number</th>
+              <th style="color: rgba(0, 0, 0, 0.25); width: 150px; " scope="col">Employee</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div>
+        <table class="table table-bordered scroll-table">
+          <tbody>
+            <tr *ngFor="let note of currentCompany.notes['$values']">
+              <td class="data-column">{{note.invoiceNumber}}</td>
+              <td class="data-column">{{getEmployeeName(note)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.header{
+       
+    font-style:inherit;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:100;
+    font-size: 20px;
+}
+.header-right{
+    float: right;
+    margin: 0;
+    margin-right: 15px;
+}
+.header-large{
+    font-size: 25px;
+}

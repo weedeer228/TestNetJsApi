@@ -1,0 +1,23 @@
+<overview-header></overview-header>
+<table class="table table-bordered mt-3">
+  <thead>
+    <tr>
+      <th class="header">Company Name</th>
+      <th class="header" scope="col">City</th>
+      <th class="header" scope="col">State</th>
+      <th class="header" scope="col">Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let company of companies">
+      <td>
+        <a class= "details-link" [routerLink]="['/companies',company.id]">
+          {{ company.name }}
+        </a>
+      </td>
+      <td>{{ company.city["name"] }}</td>
+      <td>{{ company.state }}</td>
+      <td>{{ company.phone }}</td>
+    </tr>
+  </tbody>
+</table>

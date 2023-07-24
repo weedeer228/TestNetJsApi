@@ -1,0 +1,52 @@
+<div>
+  <div>
+    <div class="header mb-3">Info
+      <button (click)="saveChanges()" class=" btn btn-icon header-right header-large">
+        <i *ngIf="isEditorMode" class="bi bi-check-lg"></i>
+      </button>
+      <button (click)="changeMode()" class=" btn btn-icon header-right header-large">
+        <i *ngIf="!isEditorMode" class="bi bi-pencil-fill"></i>
+      </button>
+    </div>
+  </div>
+  <form [formGroup]="companyInfoForm">
+    <div class="form-group flex">
+      <label class="details-label" for="id">Id:</label>
+      <div class="details-label"></div>
+      <input class="form-control " type="text" value="{{currentCompany.id}}" [disabled]="true" />
+    </div>
+    <div class="form-group flex mt-4">
+      <div class="details-label inline">
+        <label class="details-label" for="name">Name:</label>
+        <em class="header-right"
+          *ngIf="companyInfoForm.controls['name']?.invalid && (companyInfoForm.controls['name']?.touched) && isEditorMode">Required</em>
+      </div>
+      <input *ngIf="isEditorMode" class="form-control" formControlName="name" type="text"
+        value="{{currentCompany.name}}" />
+      <input *ngIf="!isEditorMode" class="form-control" type="text" value="{{currentCompany.name}}" disabled="true" />
+    </div>
+
+    <div class="form-groaup flex mt-4">
+      <div class="details-label inline">
+        <label class="details-label" for="city">City:</label>
+        <em class="header-right"
+          *ngIf="companyInfoForm.controls['city']?.invalid && (companyInfoForm.controls['city']?.touched)  && isEditorMode">Required</em>
+      </div>
+      <input *ngIf="isEditorMode" class="form-control " formControlName="city" type="text"
+        value="{{companyCityName}}" />
+      <input *ngIf="!isEditorMode" class="form-control " type="text" value="{{companyCityName}}" disabled="true" />
+    </div>
+    <div class="form-group flex mt-4">
+
+      <div class="details-label inline">
+        <label class="details-label" for="state">State:</label>
+        <em class="header-right"
+          *ngIf="companyInfoForm.controls['state']?.invalid && (companyInfoForm.controls['state']?.touched) && isEditorMode">Required</em>
+      </div>
+      <input *ngIf="isEditorMode" class="form-control" formControlName="state" type="text"
+        value="{{currentCompany.state}}" />
+      <input *ngIf="!isEditorMode" class="form-control " type="text" value="{{currentCompany.state}}" disabled="true" />
+    </div>
+  </form>
+
+</div>

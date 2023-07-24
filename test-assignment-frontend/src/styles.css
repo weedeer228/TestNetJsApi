@@ -1,0 +1,91 @@
+.btn-no-corner {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.btn-no-corner:hover {
+  padding: 2;
+
+}
+
+.btn-icon {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.fix-head thead th {
+  position: sticky;
+  top: 0px;
+}
+
+.flex {
+  display: grid-;
+}
+
+@media screen and (max-width:1000px) {
+  .flex {
+    display: inline;
+  }
+}
+
+.details-label {
+  width: 30%;
+}
+
+.details-input {
+  width: 30%;
+}
+
+.header {
+
+  font-style: inherit;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.alpha {
+  color: gray
+}
+
+.scroll-table {
+  overflow-y: scroll;
+  height: 295px;
+  display: block;
+}
+
+.header-large {
+  font-size: 25px;
+}
+
+.header-right {
+  float: right;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.part {
+  width: 300px;
+}
+
+.inline {
+  display: inline;
+}
+
+.space {
+  height: 15px;
+}
+
+.data-column {
+  width: 150px;
+}
+
+.table-header {
+  margin-bottom: 0;
+}
+
+em {
+  color: red;
+}
