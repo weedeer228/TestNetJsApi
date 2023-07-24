@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\TestAssignment\\TestAssignment.csproj": {}
+    "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\TestAssignment\\TestAssignment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\Data\\Data.csproj": {
+    "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\nikita228\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\Data\\obj\\",
+        "projectPath": "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\User03\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\nikita228\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User03\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,6 +26,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
+          "Z:\\Sync\\NuGet_Packages": {},
+          "Z:\\Sync\\Test_Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,25 +61,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\DbRepository\\DbRepository.csproj": {
+    "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\DbRepository\\DbRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\DbRepository\\DbRepository.csproj",
+        "projectUniqueName": "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\DbRepository\\DbRepository.csproj",
         "projectName": "DbRepository",
-        "projectPath": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\DbRepository\\DbRepository.csproj",
-        "packagesPath": "C:\\Users\\nikita228\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\DbRepository\\obj\\",
+        "projectPath": "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\DbRepository\\DbRepository.csproj",
+        "packagesPath": "C:\\Users\\User03\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\DbRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\nikita228\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User03\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,14 +87,16 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
+          "Z:\\Sync\\NuGet_Packages": {},
+          "Z:\\Sync\\Test_Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\Data\\Data.csproj"
+              "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\Data\\Data.csproj"
               }
             }
           }
@@ -134,25 +136,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\TestAssignment\\TestAssignment.csproj": {
+    "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\TestAssignment\\TestAssignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\TestAssignment\\TestAssignment.csproj",
+        "projectUniqueName": "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\TestAssignment\\TestAssignment.csproj",
         "projectName": "TestAssignment",
-        "projectPath": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\TestAssignment\\TestAssignment.csproj",
-        "packagesPath": "C:\\Users\\nikita228\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\TestAssignment\\obj\\",
+        "projectPath": "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\TestAssignment\\TestAssignment.csproj",
+        "packagesPath": "C:\\Users\\User03\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\TestAssignment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\nikita228\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User03\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -161,18 +162,19 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "Z:\\Sync\\NuGet_Packages": {},
+          "Z:\\Sync\\Test_Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\Data\\Data.csproj"
+              "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\Data\\Data.csproj"
               },
-              "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\DbRepository\\DbRepository.csproj": {
-                "projectPath": "C:\\Users\\nikita228\\Desktop\\test\\TestAssignment\\DbRepository\\DbRepository.csproj"
+              "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\DbRepository\\DbRepository.csproj": {
+                "projectPath": "C:\\Users\\User03\\Desktop\\TestAssignment\\TestNetJsApi\\TestNetJsApi\\DbRepository\\DbRepository.csproj"
               }
             }
           }
@@ -235,7 +237,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

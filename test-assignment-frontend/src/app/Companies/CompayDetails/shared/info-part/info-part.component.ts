@@ -24,11 +24,10 @@ export class CompanyinfoPartComponent {
   constructor(private companyService: CompanyService) { }
 
   saveChanges(): void {
-
-    if(!this.companyInfoForm.valid) return;
+    this.setCompanyInfo();
+    if (!this.companyInfoForm.valid) return;
     this.companyService.updateCompany(this.currentCompany).subscribe(data => {
       console.log(data);
-      this.setCompanyInfo();
 
     });
 
